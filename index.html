@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="app-detalhes">
+            <img src="src/image/43Z_2107.w010.n001.5B.p8.5-removebg-preview.png" alt="Ilustração da página" class="icone">
+            <h1 class="titulo">Conversor de Moedas</h1>
+        </div>
+
+        <label for="valor">Valor</label>
+        <input type="number" id="valor" value="100">
+
+        <div class="dropdowns">
+            <select id="from-currency-select"></select>
+            <i class="ri-arrow-left-right-line"></i>
+            <select id="to-currency-select"></select>
+        </div>
+        <button id="convert-button">Converter</button>
+        <p id="results"></p>
+    </div>
+
+    <script src="js/currency-codes.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
