@@ -54,6 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     const convertedAmount = (valor / fromExchangeRate) * toExchangeRate;
                     result.innerHTML = `${valor} ${fromCurrency} = ${convertedAmount.toFixed(2)} ${toCurrency}`;
+
+                    result.style.display = "block";
                 })
                 .catch((error) => {
                     console.error(error);
